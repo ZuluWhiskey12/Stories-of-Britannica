@@ -1,0 +1,407 @@
+
+.choice-row-romance {
+	background: linear-gradient(90deg, rgba(126, 18, 35, 0.34), rgba(58, 10, 18, 0.24));
+	border-color: rgba(255, 88, 108, 0.56);
+	color: #ff9aaa;
+	position: relative;
+	padding-left: 1.8rem;
+}
+.choice-row-romance::before {
+	background: linear-gradient(135deg, #ff7a8d, #b50e29);
+	border-radius: 0 0 2px 0;
+	box-shadow: 0 0 12px rgba(255, 80, 104, 0.35);
+	content: "";
+	height: 0.48rem;
+	left: 0.72rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(-45deg);
+	width: 0.48rem;
+}
+.choice-row-romance::after {
+	background:
+		radial-gradient(circle at 30% 30%, #ffb8c2 0 16%, transparent 17%),
+		linear-gradient(135deg, #ff7a8d, #b50e29);
+	border-radius: 50%;
+	box-shadow: 0.24rem 0 0 #b50e29;
+	content: "";
+	height: 0.48rem;
+	left: 0.72rem;
+	position: absolute;
+	top: calc(50% - 0.24rem);
+	width: 0.48rem;
+}
+.choice-row-romance tw-link,
+.choice-row-romance .enchantment-link {
+	color: #ff9aaa;
+}
+.choice-row-romance:hover {
+	background: linear-gradient(90deg, rgba(168, 25, 49, 0.42), rgba(84, 14, 26, 0.32));
+	border-color: rgba(255, 146, 160, 0.76);
+}
+.choice-row-romance:hover tw-link,
+.choice-row-romance:hover .enchantment-link {
+	color: #ffd0d7;
+}
+.romance-box,
+tw-passage[tags~="romance"] .narrative-box {
+	background: linear-gradient(180deg, rgba(31, 9, 15, 0.94), rgba(12, 7, 10, 0.94));
+	border-color: rgba(255, 88, 108, 0.32);
+	border-left-color: rgba(255, 88, 108, 0.7);
+	box-shadow: 0 12px 28px rgba(54, 8, 18, 0.32);
+	position: relative;
+	padding-left: 2.35rem;
+}
+.romance-box .romance-heart {
+	background: linear-gradient(135deg, #ff8898, #a80925);
+	border-radius: 0 0 3px 0;
+	box-shadow: 0 0 16px rgba(255, 82, 108, 0.34);
+	display: block;
+	height: 0.72rem;
+	left: 0.92rem;
+	position: absolute;
+	top: 1rem;
+	transform: rotate(-45deg);
+	width: 0.72rem;
+}
+.romance-box .romance-heart::before,
+.romance-box .romance-heart::after {
+	background: inherit;
+	border-radius: 50%;
+	content: "";
+	height: 0.72rem;
+	position: absolute;
+	width: 0.72rem;
+}
+.romance-box .romance-heart::before {
+	left: 0;
+	top: -0.36rem;
+}
+.romance-box .romance-heart::after {
+	left: 0.36rem;
+	top: 0;
+}
+
+.choice-row-unclaimed {
+	background: linear-gradient(90deg, rgba(238, 243, 251, 0.18), rgba(135, 148, 169, 0.12));
+	border-color: rgba(239, 246, 255, 0.58);
+	color: #f4f7fb;
+	padding-left: 2.15rem;
+	position: relative;
+}
+.choice-row-unclaimed::before {
+	background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23f7fbff%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M30%2046C19%2043%2011%2035%2010%2025C9%2016%2014%208%2023%205C20%2018%2022%2029%2031%2038%22%2F%3E%3Cpath%20d%3D%22M34%2046C45%2043%2053%2035%2054%2025C55%2016%2050%208%2041%205C44%2018%2042%2029%2033%2038%22%2F%3E%3Cpath%20d%3D%22M25%2045C29%2048%2035%2048%2039%2045%22%20stroke%3D%22%23cfd7e6%22%20stroke-width%3D%223%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / contain no-repeat;
+	content: "";
+	filter: drop-shadow(0 0 8px rgba(236, 245, 255, 0.32));
+	height: 1.1rem;
+	left: 0.58rem;
+	opacity: 0.96;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1.34rem;
+}
+.choice-row-unclaimed tw-link,
+.choice-row-unclaimed .enchantment-link {
+	color: #f4f7fb;
+}
+.choice-row-unclaimed:hover {
+	background: linear-gradient(90deg, rgba(247, 250, 255, 0.26), rgba(160, 173, 194, 0.18));
+	border-color: rgba(255, 255, 255, 0.82);
+}
+.choice-row-unclaimed:hover tw-link,
+.choice-row-unclaimed:hover .enchantment-link {
+	color: #ffffff;
+}
+.unclaimed-box,
+tw-passage[tags~="unclaimed"] .narrative-box {
+	background: linear-gradient(180deg, rgba(25, 27, 32, 0.95), rgba(9, 10, 13, 0.95));
+	border-color: rgba(236, 245, 255, 0.32);
+	border-left-color: rgba(246, 250, 255, 0.78);
+	box-shadow: 0 12px 30px rgba(210, 224, 245, 0.12);
+	color: #f0f3f8;
+	padding-left: 2.75rem;
+	position: relative;
+}
+.unclaimed-box .unclaimed-mark {
+	background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23f7fbff%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M30%2046C19%2043%2011%2035%2010%2025C9%2016%2014%208%2023%205C20%2018%2022%2029%2031%2038%22%2F%3E%3Cpath%20d%3D%22M34%2046C45%2043%2053%2035%2054%2025C55%2016%2050%208%2041%205C44%2018%2042%2029%2033%2038%22%2F%3E%3Cpath%20d%3D%22M25%2045C29%2048%2035%2048%2039%2045%22%20stroke%3D%22%23cfd7e6%22%20stroke-width%3D%223%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / contain no-repeat;
+	display: block;
+	filter: drop-shadow(0 0 8px rgba(236, 245, 255, 0.28));
+	height: 1.28rem;
+	left: 0.7rem;
+	opacity: 0.96;
+	position: absolute;
+	top: 0.72rem;
+	width: 1.6rem;
+}
+.narrative-box.unclaimed-box,
+tw-passage[tags~="unclaimed"] .narrative-box {
+	padding: 0.68rem 0.78rem 0.68rem 2.75rem;
+}
+.choice-row-eldritch {
+	background: linear-gradient(90deg, rgba(26, 206, 221, 0.24), rgba(5, 58, 66, 0.22));
+	border-color: rgba(111, 248, 255, 0.58);
+	color: #8dfcff;
+	padding-left: 2.15rem;
+	position: relative;
+}
+.choice-row-eldritch::before {
+	background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cg%20stroke%3D%22%23061216%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M9%2041c2-12%2010-20%2022-22-5%208-5%2016%201%2023Z%22%20fill%3D%22%2362f7ff%22%2F%3E%3Cpath%20d%3D%22M29%2041c-2-16%204-29%2013-35%2010%204%2013%2015%205%2027-3%204-6%206-9%208Z%22%20fill%3D%22%2311d7c9%22%2F%3E%3Cpath%20d%3D%22M36%2041c6-10%2015-15%2025-12-1%209-6%2015-15%2018Z%22%20fill%3D%22%23b7f6ff%22%2F%3E%3Cpath%20d%3D%22M10%2041l8%2010%207-7%207%208%207-8%207%207%208-10v16H10Z%22%20fill%3D%22%23e9ffff%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%2241%22%20r%3D%225%22%20fill%3D%22%23f0b35a%22%2F%3E%3Ccircle%20cx%3D%2242%22%20cy%3D%227%22%20r%3D%225%22%20fill%3D%22%23f0b35a%22%2F%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2229%22%20r%3D%225%22%20fill%3D%22%23f0b35a%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23061216%22%3E%3Crect%20x%3D%2225%22%20y%3D%2248%22%20width%3D%224%22%20height%3D%224%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2248%22%20width%3D%224%22%20height%3D%224%22%2F%3E%3Crect%20x%3D%2239%22%20y%3D%2248%22%20width%3D%224%22%20height%3D%224%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / contain no-repeat;
+	content: "";
+	filter: drop-shadow(0 0 7px rgba(92, 238, 248, 0.28));
+	height: 1.08rem;
+	left: 0.56rem;
+	opacity: 0.92;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1.34rem;
+}
+.choice-row-eldritch::after {
+	content: none;
+}
+.choice-row-eldritch tw-link,
+.choice-row-eldritch .enchantment-link {
+	color: #8dfcff;
+}
+.choice-row-eldritch:hover {
+	background: linear-gradient(90deg, rgba(54, 236, 245, 0.32), rgba(7, 83, 91, 0.3));
+	border-color: rgba(186, 255, 255, 0.8);
+}
+.choice-row-eldritch:hover tw-link,
+.choice-row-eldritch:hover .enchantment-link {
+	color: #d9ffff;
+}
+.eldritch-box,
+tw-passage[tags~="eldritch"] .narrative-box {
+	background: linear-gradient(180deg, rgba(5, 32, 38, 0.95), rgba(4, 12, 17, 0.95));
+	border-color: rgba(111, 248, 255, 0.34);
+	border-left-color: rgba(111, 248, 255, 0.78);
+	box-shadow: 0 12px 30px rgba(0, 145, 164, 0.22);
+	color: #e4ffff;
+	padding-left: 2.75rem;
+	position: relative;
+}
+.eldritch-box .eldritch-mark {
+	background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cg%20stroke%3D%22%23061216%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M9%2041c2-12%2010-20%2022-22-5%208-5%2016%201%2023Z%22%20fill%3D%22%2362f7ff%22%2F%3E%3Cpath%20d%3D%22M29%2041c-2-16%204-29%2013-35%2010%204%2013%2015%205%2027-3%204-6%206-9%208Z%22%20fill%3D%22%2311d7c9%22%2F%3E%3Cpath%20d%3D%22M36%2041c6-10%2015-15%2025-12-1%209-6%2015-15%2018Z%22%20fill%3D%22%23b7f6ff%22%2F%3E%3Cpath%20d%3D%22M10%2041l8%2010%207-7%207%208%207-8%207%207%208-10v16H10Z%22%20fill%3D%22%23e9ffff%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%2241%22%20r%3D%225%22%20fill%3D%22%23f0b35a%22%2F%3E%3Ccircle%20cx%3D%2242%22%20cy%3D%227%22%20r%3D%225%22%20fill%3D%22%23f0b35a%22%2F%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2229%22%20r%3D%225%22%20fill%3D%22%23f0b35a%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23061216%22%3E%3Crect%20x%3D%2225%22%20y%3D%2248%22%20width%3D%224%22%20height%3D%224%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2248%22%20width%3D%224%22%20height%3D%224%22%2F%3E%3Crect%20x%3D%2239%22%20y%3D%2248%22%20width%3D%224%22%20height%3D%224%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / contain no-repeat;
+	display: block;
+	filter: drop-shadow(0 0 8px rgba(75, 231, 242, 0.24));
+	height: 1.28rem;
+	left: 0.66rem;
+	opacity: 0.9;
+	position: absolute;
+	top: 0.72rem;
+	width: 1.6rem;
+}
+.eldritch-box .eldritch-mark::before,
+.eldritch-box .eldritch-mark::after {
+	content: none;
+}
+.narrative-box.eldritch-box,
+tw-passage[tags~="eldritch"] .narrative-box {
+	padding: 0.68rem 0.78rem 0.68rem 2.75rem;
+}
+.battle-status-eldritch {
+	background: rgba(20, 112, 120, 0.3);
+	border-color: rgba(111, 248, 255, 0.5);
+	color: #9ffcff;
+}
+.battle-status-eldritch .battle-tooltip {
+	border-color: rgba(111, 248, 255, 0.42);
+}
+.choice-row-jerk {
+	background: linear-gradient(90deg, rgba(222, 118, 38, 0.28), rgba(89, 42, 13, 0.2));
+	border-color: rgba(255, 181, 103, 0.54);
+	color: #ffc078;
+	position: relative;
+	padding-left: 1.95rem;
+}
+.choice-row-jerk::before {
+	background: #ffc078;
+	clip-path: polygon(7% 43%, 34% 31%, 28% 4%, 48% 28%, 74% 10%, 58% 40%, 96% 36%, 61% 51%, 79% 78%, 49% 59%, 38% 96%, 32% 63%, 4% 70%, 27% 51%);
+	content: "";
+	height: 1rem;
+	left: 0.62rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(-8deg);
+	width: 1rem;
+}
+.choice-row-jerk tw-link,
+.choice-row-jerk .enchantment-link {
+	color: #ffc078;
+}
+.choice-row-jerk:hover {
+	background: linear-gradient(90deg, rgba(255, 150, 56, 0.34), rgba(126, 57, 16, 0.28));
+	border-color: rgba(255, 210, 145, 0.74);
+}
+.choice-row-jerk:hover tw-link,
+.choice-row-jerk:hover .enchantment-link {
+	color: #ffe0b5;
+}
+.choice-row-jerk-locked {
+	border-color: rgba(255, 181, 103, 0.24);
+}
+.command-jerk {
+	background: linear-gradient(90deg, rgba(222, 118, 38, 0.28), rgba(89, 42, 13, 0.2));
+	border: 1px solid rgba(255, 181, 103, 0.54);
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #ffc078;
+	display: block;
+	font-size: 0.82em;
+	line-height: 1.25;
+	margin: 0;
+	max-width: 100%;
+	padding: 0.32rem 0.5rem 0.32rem 1.95rem;
+	position: relative;
+	width: 100%;
+}
+.command-jerk::before {
+	background: #ffc078;
+	clip-path: polygon(7% 43%, 34% 31%, 28% 4%, 48% 28%, 74% 10%, 58% 40%, 96% 36%, 61% 51%, 79% 78%, 49% 59%, 38% 96%, 32% 63%, 4% 70%, 27% 51%);
+	content: "";
+	height: 1rem;
+	left: 0.62rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(-8deg);
+	width: 1rem;
+}
+.command-jerk:hover {
+	background: linear-gradient(90deg, rgba(255, 150, 56, 0.34), rgba(126, 57, 16, 0.28));
+	border-color: rgba(255, 210, 145, 0.74);
+}
+.command-group .command-jerk tw-link,
+.command-group .command-jerk .enchantment-link {
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	color: #ffc078;
+	display: block;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	transition: color 160ms ease;
+	width: 100%;
+}
+.command-group .command-jerk tw-link:hover,
+.command-group .command-jerk .enchantment-link:hover {
+	background: transparent;
+	border: 0;
+	color: #ffe0b5;
+	transform: none;
+}
+.command-eldritch {
+	background: linear-gradient(90deg, rgba(26, 206, 221, 0.24), rgba(5, 58, 66, 0.22));
+	border: 1px solid rgba(111, 248, 255, 0.58);
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #8dfcff;
+	display: block;
+	font-size: 0.82em;
+	line-height: 1.25;
+	margin: 0;
+	max-width: 100%;
+	padding: 0.32rem 0.5rem 0.32rem 2.15rem;
+	position: relative;
+	width: 100%;
+}
+.command-eldritch::before {
+	background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cg%20stroke%3D%22%23061216%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M9%2041c2-12%2010-20%2022-22-5%208-5%2016%201%2023Z%22%20fill%3D%22%2362f7ff%22%2F%3E%3Cpath%20d%3D%22M29%2041c-2-16%204-29%2013-35%2010%204%2013%2015%205%2027-3%204-6%206-9%208Z%22%20fill%3D%22%2311d7c9%22%2F%3E%3Cpath%20d%3D%22M36%2041c6-10%2015-15%2025-12-1%209-6%2015-15%2018Z%22%20fill%3D%22%23b7f6ff%22%2F%3E%3Cpath%20d%3D%22M10%2041l8%2010%207-7%207%208%207-8%207%207%208-10v16H10Z%22%20fill%3D%22%23e9ffff%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%2241%22%20r%3D%225%22%20fill%3D%22%23f0b35a%22%2F%3E%3Ccircle%20cx%3D%2242%22%20cy%3D%227%22%20r%3D%225%22%20fill%3D%22%23f0b35a%22%2F%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2229%22%20r%3D%225%22%20fill%3D%22%23f0b35a%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23061216%22%3E%3Crect%20x%3D%2225%22%20y%3D%2248%22%20width%3D%224%22%20height%3D%224%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2248%22%20width%3D%224%22%20height%3D%224%22%2F%3E%3Crect%20x%3D%2239%22%20y%3D%2248%22%20width%3D%224%22%20height%3D%224%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / contain no-repeat;
+	content: "";
+	filter: drop-shadow(0 0 7px rgba(92, 238, 248, 0.28));
+	height: 1.08rem;
+	left: 0.56rem;
+	opacity: 0.92;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1.34rem;
+}
+.command-eldritch:hover {
+	background: linear-gradient(90deg, rgba(54, 236, 245, 0.32), rgba(7, 83, 91, 0.3));
+	border-color: rgba(186, 255, 255, 0.8);
+}
+.command-unclaimed {
+	background: linear-gradient(90deg, rgba(236, 239, 244, 0.2), rgba(132, 142, 158, 0.12));
+	border: 1px solid rgba(238, 242, 248, 0.55);
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #f2f5fb;
+	display: flex;
+	gap: 0.55rem;
+	margin: 0;
+	min-height: 2.15rem;
+	padding: 0.28rem 0.62rem;
+	width: 100%;
+}
+.command-unclaimed::before {
+	content: "";
+	border-left: 0.33rem solid transparent;
+	border-right: 0.33rem solid transparent;
+	border-bottom: 0.78rem solid #f7f7fb;
+	filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.32));
+	height: 0;
+	margin-top: 0.18rem;
+	transform: rotate(16deg);
+	width: 0;
+}
+.command-unclaimed:hover {
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.28), rgba(152, 164, 184, 0.18));
+	border-color: rgba(255, 255, 255, 0.82);
+}
+.command-group .command-eldritch tw-link,
+.command-group .command-eldritch .enchantment-link,
+.command-group .command-unclaimed tw-link,
+.command-group .command-unclaimed .enchantment-link {
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	color: #8dfcff;
+	display: block;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	transition: color 160ms ease;
+	width: 100%;
+}
+.command-group .command-eldritch tw-link:hover,
+.command-group .command-eldritch .enchantment-link:hover,
+.command-group .command-unclaimed tw-link:hover,
+.command-group .command-unclaimed .enchantment-link:hover {
+	background: transparent;
+	border: 0;
+	color: #d9ffff;
+	transform: none;
+}
+.command-group .command-unclaimed tw-link,
+.command-group .command-unclaimed .enchantment-link {
+	color: #f2f5fb;
+}
+.command-group .command-unclaimed tw-link:hover,
+.command-group .command-unclaimed .enchantment-link:hover {
+	color: #ffffff;
+}
+.jerk-box,
+tw-passage[tags~="jerk"] .narrative-box {
+	background: linear-gradient(180deg, rgba(31, 18, 8, 0.94), rgba(12, 8, 5, 0.94));
+	border-color: rgba(255, 181, 103, 0.34);
+	border-left-color: rgba(255, 181, 103, 0.74);
+	box-shadow: 0 12px 28px rgba(67, 30, 8, 0.3);
+	position: relative;
+	padding-left: 2.45rem;
+}
+.jerk-box .nerve-mark {
+	background: #ffc078;
+	clip-path: polygon(7% 43%, 34% 31%, 28% 4%, 48% 28%, 74% 10%, 58% 40%, 96% 36%, 61% 51%, 79% 78%, 49% 59%, 38% 96%, 32% 63%, 4% 70%, 27% 51%);
+	display: block;
+	height: 1.22rem;
+	left: 0.72rem;
+	position: absolute;
+	top: 0.95rem;
+	transform: rotate(-8deg);
+	width: 1.22rem;
+}

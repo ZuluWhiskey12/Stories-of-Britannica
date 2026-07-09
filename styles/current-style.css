@@ -1958,8 +1958,9 @@ tw-passage[tags~="menu"] .pause-actions {
 	overflow: hidden;
 	padding: 0.86rem;
 	position: fixed;
-	right: 0.85rem;
-	top: 3.25rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: min(44rem, calc(100vw - 1.7rem));
 	z-index: 112;
 }

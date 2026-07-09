@@ -1,0 +1,108 @@
+/* Quick save/load action row beside the pause button. */
+tw-passage[tags~="menu"] .pause-actions {
+	display: none !important;
+}
+.pause-actions {
+	align-items: center;
+	display: flex;
+	font-family: Georgia, serif;
+	gap: 0.34rem;
+	position: fixed;
+	right: 0.85rem;
+	top: 0.78rem;
+	z-index: 70;
+}
+.pause-actions,
+.pause-actions * {
+	box-sizing: border-box;
+}
+.pause-actions .pause-menu {
+	display: flex;
+	flex: 0 0 auto;
+	height: 2.15rem;
+	position: relative;
+	right: auto;
+	top: auto;
+}
+.quick-action-button {
+	align-items: center;
+	display: flex;
+	height: 2.15rem;
+}
+.quick-action-button tw-expression {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	margin: 0;
+}
+.quick-action-button tw-link {
+	align-items: center;
+	background:
+		linear-gradient(180deg, rgba(35, 27, 17, 0.95), rgba(13, 12, 13, 0.95));
+	border: 1px solid rgba(255, 217, 144, 0.42);
+	border-radius: 999px;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.34), 0 0 12px rgba(214, 173, 98, 0.1);
+	color: #ffd990;
+	display: inline-flex;
+	font-size: 0.58em;
+	font-weight: 700;
+	height: 2.15rem;
+	justify-content: center;
+	letter-spacing: 0;
+	line-height: 1;
+	margin: 0;
+	min-width: 5.85rem;
+	padding: 0 0.72rem;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.pause-actions .pause-toggle,
+.pause-actions .memory-log-button,
+.pause-actions .journal-toggle,
+.pause-actions .quick-action-button tw-link {
+	height: 2.15rem;
+	margin-bottom: 0;
+	margin-top: 0;
+	min-height: 2.15rem;
+}
+.quick-action-button tw-link:hover {
+	background:
+		linear-gradient(180deg, rgba(47, 36, 22, 0.98), rgba(18, 15, 13, 0.98));
+	border-color: rgba(255, 226, 165, 0.76);
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.44), 0 0 18px rgba(240, 179, 90, 0.2);
+}
+.quick-action-status {
+	position: absolute;
+	right: 2.7rem;
+	top: calc(100% + 0.34rem);
+}
+.quick-confirm {
+	background: rgba(16, 17, 20, 0.92);
+	border: 1px solid rgba(201, 140, 255, 0.48);
+	border-radius: 999px;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+	color: #c98cff;
+	display: inline-block;
+	font-size: 0.56em;
+	font-weight: 700;
+	line-height: 1;
+	padding: 0.26rem 0.46rem;
+	white-space: nowrap;
+}
+@media (max-width: 640px) {
+	.pause-actions {
+		gap: 0.2rem;
+		right: 0.45rem;
+		top: 0.42rem;
+	}
+	.quick-action-button tw-link {
+		font-size: 0.5em;
+		min-width: 4.6rem;
+		padding: 0 0.46rem;
+	}
+	.quick-action-status {
+		right: 2.35rem;
+	}
+}
+

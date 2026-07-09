@@ -1,0 +1,261 @@
+/* Journal page refinement: table of contents and one-page reading view. */
+.journal-window {
+	max-height: calc(100vh - 6.1rem);
+}
+.journal-book {
+	display: flex;
+	gap: 0;
+	min-height: min(32rem, calc(100vh - 10.25rem));
+	overflow: hidden;
+	position: relative;
+}
+.journal-book::before {
+	background: linear-gradient(90deg, transparent, rgba(82, 47, 18, 0.24), transparent);
+	bottom: 0.4rem;
+	content: "";
+	left: min(34%, 18rem);
+	pointer-events: none;
+	position: absolute;
+	top: 0.4rem;
+	width: 1px;
+}
+.journal-toc {
+	background:
+		linear-gradient(90deg, rgba(255, 246, 211, 0.22), rgba(116, 70, 26, 0.08)),
+		repeating-linear-gradient(0deg, rgba(92, 58, 20, 0.06) 0 1px, transparent 1px 1.55rem);
+	border: 0;
+	border-right: 1px solid rgba(92, 58, 20, 0.28);
+	border-radius: 0;
+	box-shadow: inset -18px 0 28px rgba(83, 48, 18, 0.08);
+	display: flex;
+	flex: 0 0 min(34%, 18rem);
+	flex-direction: column;
+	gap: 0.12rem;
+	min-height: 0;
+	overflow: auto;
+	padding: 1.02rem 1rem 0.82rem 0.34rem;
+	scrollbar-color: #73481e rgba(68, 41, 18, 0.22);
+	scrollbar-width: thin;
+}
+.journal-toc::-webkit-scrollbar,
+.journal-page-card::-webkit-scrollbar {
+	width: 0.66rem;
+}
+.journal-toc::-webkit-scrollbar-track,
+.journal-page-card::-webkit-scrollbar-track {
+	background: rgba(68, 41, 18, 0.18);
+	border: 1px solid rgba(92, 58, 20, 0.25);
+	border-radius: 999px;
+}
+.journal-toc::-webkit-scrollbar-thumb,
+.journal-page-card::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, #8b5a25, #4b2e15);
+	border: 2px solid rgba(232, 200, 142, 0.88);
+	border-radius: 999px;
+}
+.journal-toc-title {
+	border-bottom: 1px solid rgba(92, 58, 20, 0.34);
+	color: #2a170c;
+	font-size: 0.72em;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+	line-height: 1;
+	margin: 0 0 0.48rem 0.46rem;
+	padding-bottom: 0.44rem;
+	text-transform: uppercase;
+}
+.journal-toc-entry {
+	background: transparent;
+	border: 0;
+	border-bottom: 1px dotted rgba(92, 58, 20, 0.34);
+	border-radius: 0;
+	color: #3b2413;
+	font-family: "Segoe Print", "Bradley Hand ITC", "Comic Sans MS", cursive;
+	font-size: 0.66em;
+	font-weight: 600;
+	line-height: 1.22;
+	min-height: 1.45rem;
+	padding: 0.28rem 0.16rem 0.22rem 1.12rem;
+	position: relative;
+	text-shadow: 0 1px 0 rgba(255, 241, 196, 0.38);
+}
+.journal-toc-entry::before {
+	background: rgba(60, 35, 15, 0.42);
+	border-radius: 50%;
+	content: "";
+	height: 0.22rem;
+	left: 0.42rem;
+	position: absolute;
+	top: 0.72rem;
+	width: 0.22rem;
+}
+.journal-toc-entry.active {
+	background:
+		linear-gradient(180deg, transparent 0 54%, rgba(97, 58, 21, 0.17) 54% 78%, transparent 78%),
+		linear-gradient(90deg, rgba(255, 241, 189, 0.24), transparent 72%);
+	border-color: rgba(92, 58, 20, 0.44);
+	box-shadow: none;
+	color: #1d1008;
+	font-weight: 800;
+	transform: rotate(-0.25deg);
+}
+.journal-toc-entry.active::before {
+	background: #2d190b;
+	box-shadow: 0 0 0 2px rgba(121, 74, 27, 0.16);
+}
+.journal-toc-entry tw-link,
+.journal-toc-entry .enchantment-link {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	color: inherit;
+	display: block;
+	font-weight: 700;
+	line-height: 1.1;
+	padding: 0 !important;
+	text-decoration: none;
+}
+.journal-toc-entry tw-link:hover,
+.journal-toc-entry .enchantment-link:hover {
+	background: transparent !important;
+	box-shadow: none !important;
+	color: #221208;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.18rem;
+}
+.journal-toc-note {
+	color: rgba(54, 32, 14, 0.72);
+	font-size: 0.54em;
+	font-style: italic;
+	line-height: 1.2;
+	margin: 0.64rem 0.22rem 0 1.1rem;
+}
+.journal-page-shell {
+	flex: 1 1 auto;
+	display: grid;
+	grid-template-rows: minmax(0, 1fr) auto;
+	min-height: 0;
+	padding-left: 0.9rem;
+}
+.journal-page-shell > tw-expression,
+.journal-page-shell > tw-hook,
+.journal-page-shell > tw-include,
+.journal-book > tw-expression,
+.journal-book > tw-hook,
+.journal-book > tw-include,
+.journal-toc > tw-expression,
+.journal-toc > tw-hook,
+.journal-toc > tw-include,
+.journal-page-nav > tw-expression,
+.journal-page-nav > tw-hook,
+.journal-page-nav > tw-include {
+	display: contents !important;
+}
+.journal-page-card {
+	background:
+		linear-gradient(180deg, rgba(255, 246, 211, 0.78), rgba(229, 199, 143, 0.84)),
+		repeating-linear-gradient(0deg, rgba(92, 58, 20, 0.08) 0 1px, transparent 1px 1.65rem);
+	border: 1px solid rgba(92, 58, 20, 0.44);
+	border-radius: 8px;
+	box-shadow: 0 14px 28px rgba(61, 31, 8, 0.14), inset 0 0 0 1px rgba(255, 248, 220, 0.28);
+	min-height: 0;
+	overflow: auto;
+	padding: 0.82rem;
+}
+.journal-page-content {
+	display: grid;
+	gap: 0.84rem;
+	grid-template-columns: minmax(0, 1fr) minmax(7.6rem, 10rem);
+}
+.journal-page-title {
+	border-bottom: 1px solid rgba(92, 58, 20, 0.32);
+	color: #2c1b10;
+	font-size: 1em;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+	line-height: 1.08;
+	padding-bottom: 0.42rem;
+	text-transform: uppercase;
+}
+.journal-page-body {
+	color: #342113;
+	font-family: "Segoe Print", "Bradley Hand ITC", "Comic Sans MS", cursive;
+	font-size: 0.88em;
+	line-height: 1.44;
+	margin-top: 0.58rem;
+	white-space: pre-line;
+}
+.journal-page-card .journal-sketch {
+	min-height: 12rem;
+	position: sticky;
+	top: 0.1rem;
+}
+.journal-page-nav {
+	align-items: center;
+	display: flex;
+	gap: 0.46rem;
+	justify-content: space-between;
+	margin-top: 0.62rem;
+}
+.journal-page-turn {
+	background: transparent;
+	border: 0;
+	border-top: 1px solid rgba(92, 58, 20, 0.3);
+	border-radius: 0;
+	color: #2a170c;
+	font-family: "Segoe Print", "Bradley Hand ITC", "Comic Sans MS", cursive;
+	font-size: 0.62em;
+	font-style: italic;
+	font-weight: 700;
+	letter-spacing: 0;
+	min-width: 7rem;
+	padding: 0.22rem 0.1rem 0;
+	text-align: center;
+	text-transform: none;
+}
+.journal-page-turn.empty {
+	opacity: 0.32;
+}
+.journal-page-turn tw-link,
+.journal-page-turn .enchantment-link {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	color: inherit;
+	display: block;
+	padding: 0 !important;
+	text-decoration: none;
+}
+.journal-page-turn tw-link:hover,
+.journal-page-turn .enchantment-link:hover {
+	background: transparent !important;
+	box-shadow: none !important;
+	text-decoration: underline;
+	text-underline-offset: 0.18rem;
+}
+@media (max-width: 760px) {
+	.journal-book {
+		display: block;
+	}
+	.journal-book::before {
+		display: none;
+	}
+	.journal-toc {
+		max-height: 10.5rem;
+		border-right: 0;
+		border-bottom: 1px solid rgba(92, 58, 20, 0.28);
+		margin-bottom: 0.7rem;
+		padding-right: 0.34rem;
+	}
+	.journal-page-shell {
+		padding-left: 0;
+	}
+	.journal-page-content {
+		grid-template-columns: 1fr;
+	}
+	.journal-page-card .journal-sketch {
+		min-height: 5rem;
+		position: static;
+	}
+}

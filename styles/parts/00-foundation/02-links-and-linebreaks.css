@@ -1,0 +1,24 @@
+tw-link, .enchantment-link {
+	color: #f0b35a;
+	line-height: 1.2;
+}
+tw-link:hover, .enchantment-link:hover {
+	color: #ffd990;
+}
+tw-passage tw-consecutive-br {
+	display: block;
+	height: 0.55em;
+	line-height: 0.55em;
+}
+tw-passage br {
+	display: block;
+	height: 0.42em;
+	line-height: 0.42em;
+	margin: 0;
+}
+tw-passage br + br,
+tw-passage br + tw-consecutive-br,
+tw-passage tw-consecutive-br + br {
+	height: 0.18em;
+	line-height: 0.18em;
+}

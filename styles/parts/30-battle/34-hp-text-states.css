@@ -1,0 +1,12 @@
+.hp-good {
+	color: #93e08b;
+	font-weight: bold;
+}
+.hp-warn {
+	color: #ffd36e;
+	font-weight: bold;
+}
+.hp-danger {
+	color: #ff7a7a;
+	font-weight: bold;
+}

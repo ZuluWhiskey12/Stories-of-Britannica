@@ -1,0 +1,50 @@
+.battle-box {
+	background: linear-gradient(180deg, rgba(18, 18, 24, 0.96), rgba(8, 8, 12, 0.96));
+	border: 1px solid rgba(214, 173, 98, 0.42);
+	border-radius: 8px;
+	box-shadow: 0 14px 36px rgba(0, 0, 0, 0.38);
+	margin: 0 0 1em;
+	overflow: visible;
+	padding: 0.75em;
+}
+.battle-ui {
+	display: grid;
+	gap: 0.55rem;
+}
+.battle-title {
+	color: #d6ad62;
+	font-size: 0.75em;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+.battle-hud {
+	display: grid;
+	gap: 0.75rem;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	margin-top: 0.35rem;
+}
+.fighter-panel {
+	background: rgba(255, 255, 255, 0.045);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 6px;
+	min-width: 0;
+	padding: 0.55rem;
+	width: auto;
+}
+.fighter-panel.pela-panel {
+	grid-column: 1;
+}
+.fighter-panel.lorne-panel {
+	grid-column: 2;
+}
+.fighter-row {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.35rem;
+}
+.fighter-name {
+	color: #f4e6ca;
+	font-weight: bold;
+}

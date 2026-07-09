@@ -1,0 +1,271 @@
+/* Memory log overlay. Session-only UI; does not use Twine save variables. */
+.memory-log-button {
+	align-items: center;
+	appearance: none;
+	-webkit-appearance: none;
+	background:
+		linear-gradient(180deg, rgba(35, 27, 17, 0.95), rgba(13, 12, 13, 0.95));
+	border: 1px solid rgba(255, 217, 144, 0.42);
+	border-radius: 999px;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.34), 0 0 12px rgba(214, 173, 98, 0.1);
+	color: #ffd990;
+	display: inline-flex;
+	font-family: Georgia, serif;
+	font-size: 0.58em;
+	font-weight: 700;
+	gap: 0.32rem;
+	height: 2.15rem;
+	justify-content: center;
+	letter-spacing: 0;
+	line-height: 1;
+	margin: 0;
+	min-width: 4.25rem;
+	padding: 0 0.58rem;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.memory-log-button:hover {
+	background:
+		linear-gradient(180deg, rgba(47, 36, 22, 0.98), rgba(18, 15, 13, 0.98));
+	border-color: rgba(255, 226, 165, 0.76);
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.44), 0 0 18px rgba(240, 179, 90, 0.2);
+}
+.memory-log-glyph {
+	border: 1px solid rgba(255, 217, 144, 0.78);
+	border-radius: 0.16rem;
+	box-shadow: inset 0 0 7px rgba(255, 217, 144, 0.16), 0 0 7px rgba(214, 173, 98, 0.18);
+	display: inline-block;
+	height: 0.82rem;
+	position: relative;
+	width: 0.64rem;
+}
+.memory-log-glyph::before,
+.memory-log-glyph::after {
+	background: rgba(255, 217, 144, 0.72);
+	content: "";
+	height: 1px;
+	left: 0.14rem;
+	position: absolute;
+	width: 0.34rem;
+}
+.memory-log-glyph::before {
+	top: 0.25rem;
+}
+.memory-log-glyph::after {
+	top: 0.48rem;
+}
+.memory-log-overlay {
+	align-items: center;
+	background: radial-gradient(circle at 50% 18%, rgba(214, 173, 98, 0.1), transparent 34%), rgba(0, 0, 0, 0.58);
+	display: none;
+	inset: 0;
+	justify-content: center;
+	padding: 1.15rem;
+	position: fixed;
+	z-index: 95;
+}
+.memory-log-overlay.is-open {
+	display: flex;
+}
+.memory-log-panel {
+	background:
+		linear-gradient(180deg, rgba(18, 18, 24, 0.98), rgba(7, 8, 11, 0.98)),
+		linear-gradient(90deg, rgba(214, 173, 98, 0.08), transparent 17%, transparent 83%, rgba(214, 173, 98, 0.08));
+	border: 1px solid rgba(214, 173, 98, 0.48);
+	border-radius: 10px;
+	box-shadow: 0 22px 58px rgba(0, 0, 0, 0.62);
+	color: #e7dfd4;
+	font-family: Georgia, serif;
+	max-height: min(84vh, 46rem);
+	overflow: hidden;
+	padding: 0.78rem;
+	width: min(48rem, calc(100vw - 1.4rem));
+}
+.memory-log-head {
+	align-items: center;
+	border-bottom: 1px solid rgba(214, 173, 98, 0.3);
+	display: flex;
+	gap: 0.7rem;
+	justify-content: space-between;
+	margin-bottom: 0.62rem;
+	padding-bottom: 0.55rem;
+}
+.memory-log-title {
+	color: #ffd990;
+	font-size: 1.18em;
+	font-weight: 700;
+	line-height: 1.05;
+	text-transform: uppercase;
+}
+.memory-log-actions {
+	display: flex;
+	gap: 0.36rem;
+}
+.memory-log-close,
+.memory-log-clear {
+	background: rgba(240, 179, 90, 0.08);
+	border: 1px solid rgba(240, 179, 90, 0.32);
+	border-radius: 999px;
+	color: #f0b35a;
+	font-family: Georgia, serif;
+	font-size: 0.62em;
+	font-weight: 700;
+	line-height: 1;
+	padding: 0.36rem 0.58rem;
+	text-transform: uppercase;
+}
+.memory-log-close:hover,
+.memory-log-clear:hover {
+	background: rgba(240, 179, 90, 0.16);
+	border-color: rgba(255, 217, 144, 0.58);
+}
+.memory-log-scroll {
+	background:
+		linear-gradient(90deg, rgba(214, 173, 98, 0.12), transparent 0.45rem, transparent calc(100% - 0.45rem), rgba(214, 173, 98, 0.1)),
+		rgba(3, 4, 7, 0.54);
+	border: 1px solid rgba(214, 173, 98, 0.26);
+	border-radius: 8px;
+	max-height: calc(min(84vh, 46rem) - 5.1rem);
+	overflow: auto;
+	padding: 0.64rem;
+	scrollbar-color: rgba(214, 173, 98, 0.82) rgba(8, 8, 12, 0.92);
+	scrollbar-gutter: stable;
+	scrollbar-width: thin;
+}
+.memory-log-scroll::-webkit-scrollbar {
+	height: 0.86rem;
+	width: 0.86rem;
+}
+.memory-log-scroll::-webkit-scrollbar-track {
+	background: linear-gradient(180deg, rgba(7, 8, 11, 0.96), rgba(21, 16, 10, 0.92));
+	border-left: 1px solid rgba(214, 173, 98, 0.2);
+	border-radius: 999px;
+}
+.memory-log-scroll::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, #ffd990, #b9823c);
+	border: 0.22rem solid rgba(7, 8, 11, 0.96);
+	border-radius: 999px;
+	box-shadow: inset 0 0 7px rgba(255, 240, 191, 0.24), 0 0 8px rgba(214, 173, 98, 0.2);
+}
+.memory-log-scroll::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(180deg, #fff0bf, #d6ad62);
+}
+.memory-log-scroll::-webkit-scrollbar-button:single-button {
+	background-color: rgba(16, 17, 20, 0.98);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 0.58rem 0.58rem;
+	border: 1px solid rgba(214, 173, 98, 0.26);
+	display: block;
+	height: 0.9rem;
+	width: 0.86rem;
+}
+.memory-log-scroll::-webkit-scrollbar-button:single-button:vertical:decrement {
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20d%3D%22M6%203%2010%208H2Z%22%20fill%3D%22%23d6ad62%22%2F%3E%3C%2Fsvg%3E");
+	border-radius: 999px 999px 4px 4px;
+}
+.memory-log-scroll::-webkit-scrollbar-button:single-button:vertical:increment {
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20d%3D%22M2%204h8L6%209Z%22%20fill%3D%22%23d6ad62%22%2F%3E%3C%2Fsvg%3E");
+	border-radius: 4px 4px 999px 999px;
+}
+.memory-log-scroll::-webkit-scrollbar-corner {
+	background: rgba(7, 8, 11, 0.96);
+}
+.memory-log-empty {
+	color: #b8b0a4;
+	font-size: 0.78em;
+	line-height: 1.35;
+	padding: 0.8rem;
+	text-align: center;
+}
+.memory-log-entry {
+	background: linear-gradient(180deg, rgba(18, 18, 24, 0.92), rgba(8, 8, 12, 0.92));
+	border: 1px solid rgba(214, 173, 98, 0.22);
+	border-left: 3px solid rgba(214, 173, 98, 0.5);
+	border-radius: 7px;
+	box-shadow: 0 10px 22px rgba(0, 0, 0, 0.24);
+	font-size: 0.68em;
+	line-height: 1.34;
+	margin: 0 0 0.48rem;
+	padding: 0.54rem 0.62rem;
+}
+.memory-log-entry:last-child {
+	margin-bottom: 0;
+}
+.memory-log-entry.choice {
+	border-left-color: rgba(240, 179, 90, 0.7);
+}
+.memory-log-entry.romance {
+	border-left-color: rgba(255, 119, 127, 0.86);
+}
+.memory-log-entry.nerve {
+	border-left-color: rgba(255, 192, 120, 0.86);
+}
+.memory-log-entry.eldritch {
+	border-left-color: rgba(111, 248, 255, 0.82);
+}
+.memory-log-entry.unclaimed {
+	border-left-color: rgba(232, 237, 242, 0.82);
+}
+.memory-log-entry.command {
+	border-left-color: rgba(103, 132, 202, 0.82);
+}
+.memory-log-meta {
+	align-items: center;
+	color: #a99063;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0.72em;
+	gap: 0.34rem;
+	margin-bottom: 0.28rem;
+	text-transform: uppercase;
+}
+.memory-log-kind {
+	color: #ffd990;
+	font-weight: 700;
+}
+.memory-log-entry.romance .memory-log-kind {
+	color: #ff777f;
+}
+.memory-log-entry.nerve .memory-log-kind {
+	color: #ffc078;
+}
+.memory-log-entry.eldritch .memory-log-kind {
+	color: #6ff8ff;
+}
+.memory-log-entry.unclaimed .memory-log-kind {
+	color: #e8edf2;
+}
+.memory-log-body {
+	color: #e7dfd4;
+	white-space: pre-wrap;
+}
+.memory-log-gain {
+	color: #c98cff;
+	display: inline-block;
+	font-weight: 700;
+	margin-top: 0.34rem;
+}
+@media (max-width: 640px) {
+	.memory-log-button {
+		font-size: 0.5em;
+		gap: 0.24rem;
+		min-width: 3.65rem;
+		padding: 0 0.38rem;
+	}
+	.memory-log-panel {
+		max-height: 88vh;
+		padding: 0.62rem;
+	}
+	.memory-log-head {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 0.46rem;
+	}
+	.memory-log-scroll {
+		max-height: calc(88vh - 6.4rem);
+	}
+}
+
+

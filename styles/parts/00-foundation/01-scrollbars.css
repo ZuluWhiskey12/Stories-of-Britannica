@@ -1,0 +1,111 @@
+/* Global story scrollbar styling for long passages and scrollable panels. */
+:root {
+	--sobi-scroll-track: rgba(8, 8, 12, 0.94);
+	--sobi-scroll-track-edge: rgba(214, 173, 98, 0.2);
+	--sobi-scroll-thumb-start: #ffd990;
+	--sobi-scroll-thumb-end: #b9823c;
+	--sobi-scroll-arrow: #d6ad62;
+}
+html,
+body,
+tw-story,
+tw-passage,
+* {
+	scrollbar-color: rgba(214, 173, 98, 0.82) var(--sobi-scroll-track);
+	scrollbar-width: thin;
+}
+html {
+	background: #101114;
+	scrollbar-gutter: stable;
+}
+body {
+	background: #101114;
+}
+::-webkit-scrollbar,
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+	background: rgba(7, 8, 11, 0.98);
+	height: 0.86rem;
+	width: 0.86rem;
+}
+::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+	background: linear-gradient(180deg, rgba(7, 8, 11, 0.98), rgba(21, 16, 10, 0.94));
+	border-left: 1px solid var(--sobi-scroll-track-edge);
+	border-radius: 999px;
+}
+::-webkit-scrollbar-track-piece,
+html::-webkit-scrollbar-track-piece,
+body::-webkit-scrollbar-track-piece,
+*::-webkit-scrollbar-track-piece {
+	background: linear-gradient(180deg, rgba(7, 8, 11, 0.98), rgba(21, 16, 10, 0.94));
+}
+::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, var(--sobi-scroll-thumb-start), var(--sobi-scroll-thumb-end));
+	border: 0.22rem solid rgba(7, 8, 11, 0.98);
+	border-radius: 999px;
+	box-shadow: inset 0 0 7px rgba(255, 240, 191, 0.24), 0 0 8px rgba(214, 173, 98, 0.2);
+}
+::-webkit-scrollbar-thumb:hover,
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(180deg, #fff0bf, #d6ad62);
+}
+::-webkit-scrollbar-button,
+html::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button,
+*::-webkit-scrollbar-button,
+::-webkit-scrollbar-button:single-button,
+html::-webkit-scrollbar-button:single-button,
+body::-webkit-scrollbar-button:single-button,
+*::-webkit-scrollbar-button:single-button {
+	background-color: rgba(16, 17, 20, 0.98);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 0.58rem 0.58rem;
+	border: 1px solid rgba(214, 173, 98, 0.26);
+	display: block;
+	height: 0.9rem;
+	width: 0.86rem;
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement,
+html::-webkit-scrollbar-button:single-button:vertical:decrement,
+body::-webkit-scrollbar-button:single-button:vertical:decrement,
+*::-webkit-scrollbar-button:single-button:vertical:decrement {
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20d%3D%22M6%203%2010%208H2Z%22%20fill%3D%22%23d6ad62%22%2F%3E%3C%2Fsvg%3E");
+	border-radius: 999px 999px 4px 4px;
+}
+::-webkit-scrollbar-button:single-button:vertical:increment,
+html::-webkit-scrollbar-button:single-button:vertical:increment,
+body::-webkit-scrollbar-button:single-button:vertical:increment,
+*::-webkit-scrollbar-button:single-button:vertical:increment {
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20d%3D%22M2%204h8L6%209Z%22%20fill%3D%22%23d6ad62%22%2F%3E%3C%2Fsvg%3E");
+	border-radius: 4px 4px 999px 999px;
+}
+::-webkit-scrollbar-button:single-button:horizontal:decrement,
+html::-webkit-scrollbar-button:single-button:horizontal:decrement,
+body::-webkit-scrollbar-button:single-button:horizontal:decrement,
+*::-webkit-scrollbar-button:single-button:horizontal:decrement {
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20d%3D%22M3%206l5-4v8Z%22%20fill%3D%22%23d6ad62%22%2F%3E%3C%2Fsvg%3E");
+	border-radius: 999px 4px 4px 999px;
+}
+::-webkit-scrollbar-button:single-button:horizontal:increment,
+html::-webkit-scrollbar-button:single-button:horizontal:increment,
+body::-webkit-scrollbar-button:single-button:horizontal:increment,
+*::-webkit-scrollbar-button:single-button:horizontal:increment {
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20d%3D%22M9%206l-5%204V2Z%22%20fill%3D%22%23d6ad62%22%2F%3E%3C%2Fsvg%3E");
+	border-radius: 4px 999px 999px 4px;
+}
+::-webkit-scrollbar-corner,
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-corner {
+	background: rgba(7, 8, 11, 0.98);
+}

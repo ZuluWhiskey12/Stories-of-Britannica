@@ -1,0 +1,80 @@
+.save-menu:hover,
+.save-menu:focus-within {
+	max-width: 18rem;
+	opacity: 0.96;
+}
+.save-title {
+	color: #d6ad62;
+	display: block;
+	font-size: 0.9em;
+	margin-bottom: 0.2rem;
+	text-transform: uppercase;
+}
+.save-menu tw-link {
+	display: inline-block;
+	margin: 0.08rem 0.12rem 0.08rem 0;
+	padding: 0.05rem 0.25rem;
+	white-space: nowrap;
+}
+
+.checkpoint-slots {
+	display: grid;
+	gap: 0.04rem 0.22rem;
+	grid-template-columns: auto auto;
+	margin-top: 0.12rem;
+}
+.checkpoint-nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 0.16rem;
+}
+.checkpoint-nav tw-link {
+	align-items: center;
+	background: rgba(240, 179, 90, 0.08);
+	border: 1px solid rgba(240, 179, 90, 0.26);
+	border-radius: 999px;
+	display: inline-flex;
+	font-size: 0;
+	height: 1rem;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	width: 1.3rem;
+}
+.checkpoint-nav tw-link::before {
+	border-bottom: 2px solid #d6ad62;
+	border-right: 2px solid #d6ad62;
+	content: "";
+	height: 0.38rem;
+	width: 0.38rem;
+}
+.checkpoint-nav-down tw-link::before {
+	top: -0.08rem;
+	transform: rotate(45deg);
+}
+.checkpoint-nav-up tw-link::before {
+	top: 0.08rem;
+	transform: rotate(225deg);
+}
+.checkpoint-nav tw-link:hover {
+	background: rgba(240, 179, 90, 0.16);
+	border-color: rgba(255, 217, 144, 0.5);
+}
+@media (max-width: 640px) {
+	.save-menu {
+		bottom: 0.35rem;
+		font-size: 0.52em;
+		left: 0.35rem;
+		max-width: none;
+		opacity: 0.6;
+		right: 0.35rem;
+		text-align: center;
+	}
+	.battle-hud {
+		grid-template-columns: 1fr;
+	}
+	.fighter-panel.pela-panel,
+	.fighter-panel.lorne-panel {
+		grid-column: 1;
+	}
+}
