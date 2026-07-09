@@ -1,0 +1,25 @@
+.save-menu {
+	background: rgba(16, 17, 20, 0.88);
+	border: 1px solid rgba(214, 173, 98, 0.35);
+	border-radius: 6px;
+	bottom: 0.75rem;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+	color: #b8b0a4;
+	font-family: Georgia, serif;
+	font-size: 0.58em;
+	line-height: 1.2;
+	max-width: 9.5rem;
+	opacity: 0.35;
+	padding: 0.35rem 0.45rem;
+	position: fixed;
+	right: 0.75rem;
+	text-align: left;
+	transition: opacity 160ms ease, max-width 160ms ease;
+	z-index: 20;
+}
+.gain-notice {
+	color: #c98cff;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 0.5rem;
+}

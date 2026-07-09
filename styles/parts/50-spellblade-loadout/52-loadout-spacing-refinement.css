@@ -1,0 +1,38 @@
+/* Loadout spacing refinement pass. */
+.spellblade-loadout-panel br,
+.spellblade-loadout-panel tw-consecutive-br {
+	display: none !important;
+}
+.spellblade-loadout-panel > tw-expression:empty,
+.spellblade-loadout-panel > tw-hook:empty,
+.spellblade-loadout-panel > tw-include:empty {
+	display: none !important;
+}
+.loadout-screen {
+	align-content: stretch;
+}
+.loadout-screen-head {
+	flex: 0 0 auto;
+}
+.loadout-card {
+	padding: 0.58rem 2.15rem 0.58rem 0.58rem;
+	position: relative;
+}
+.loadout-card-name,
+.loadout-card-desc,
+.loadout-card-cost {
+	padding-right: 0.15rem;
+}
+.loadout-remove {
+	bottom: 0.45rem;
+	margin: 0 !important;
+	position: absolute;
+	right: 0.45rem;
+}
+.loadout-equipped-filter-row {
+	border-bottom: 1px solid rgba(214, 173, 98, 0.08);
+	padding-bottom: 0.34rem;
+}
+.loadout-equipped-filter-row + .equipped-list {
+	padding-top: 0.5rem;
+}

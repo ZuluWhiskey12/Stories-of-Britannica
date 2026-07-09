@@ -1,0 +1,153 @@
+/* Loadout icon centering refinement. */
+.loadout-card {
+	align-items: center !important;
+	column-gap: 0.56rem !important;
+	grid-template-columns: 2.25rem minmax(0, 1fr) auto !important;
+	min-height: 3.45rem !important;
+	padding: 0.5rem 2rem 0.5rem 0.64rem !important;
+}
+.loadout-icon {
+	align-self: center !important;
+	box-sizing: border-box;
+	display: inline-flex !important;
+	height: 2.08rem !important;
+	justify-self: center !important;
+	line-height: 1 !important;
+	margin: 0 !important;
+	min-height: 2.08rem;
+	min-width: 2.08rem;
+	padding: 0 !important;
+	transform: none !important;
+	vertical-align: middle;
+	width: 2.08rem !important;
+}
+.loadout-card-body {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 2.08rem;
+}
+.loadout-card-tag {
+	align-self: start;
+	padding-top: 0.14rem;
+}
+.loadout-remove {
+	bottom: auto !important;
+	right: 0.5rem !important;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.loadout-card-action {
+	align-items: center;
+	background: rgba(240, 179, 90, 0.1);
+	border: 1px solid rgba(214, 173, 98, 0.32);
+	border-radius: 999px;
+	color: #f4c76f;
+	display: inline-flex;
+	font-size: 0.48em;
+	font-weight: 800;
+	grid-column: 3;
+	grid-row: 2;
+	justify-self: end;
+	justify-content: center;
+	line-height: 1;
+	min-width: 3rem;
+	padding: 0.24rem 0.46rem;
+	position: static;
+	align-self: end;
+	transform: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	z-index: 2;
+}
+.loadout-card-action tw-link,
+.loadout-card-action .enchantment-link {
+	color: #ffe0a0;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+}
+.loadout-card-action:hover {
+	background: rgba(240, 179, 90, 0.18);
+	border-color: rgba(255, 216, 136, 0.55);
+}
+.loadout-card-action.equipped-action {
+	background: rgba(139, 114, 66, 0.12);
+	color: #d8c8af;
+}
+.loadout-card-action.locked-action {
+	background: rgba(184, 176, 164, 0.07);
+	border-color: rgba(184, 176, 164, 0.2);
+	color: #9d9489;
+}
+.loadout-card.available {
+	border-color: rgba(240, 179, 90, 0.44);
+}
+.loadout-card.available .loadout-card-name {
+	color: #fff0c8;
+}
+.loadout-card.available .loadout-card-action {
+	background: rgba(240, 179, 90, 0.18);
+	border-color: rgba(240, 179, 90, 0.5);
+	box-shadow: 0 0 10px rgba(240, 179, 90, 0.08);
+}
+.loadout-card.eldritch .loadout-card-action {
+	background: rgba(111, 248, 255, 0.08);
+	border-color: rgba(111, 248, 255, 0.3);
+	color: #8dfcff;
+}
+.preset-name tw-link,
+.preset-name .enchantment-link {
+	color: #ffd990;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+}
+.loadout-preset-card:not(.active):not(.locked) .preset-name tw-link,
+.loadout-preset-card:not(.active):not(.locked) .preset-name .enchantment-link {
+	background: rgba(240, 179, 90, 0.12);
+	border: 1px solid rgba(240, 179, 90, 0.34);
+	border-radius: 999px;
+	box-sizing: border-box;
+	padding: 0.22rem 0.55rem;
+	text-align: center;
+}
+.loadout-preset-card:has(tw-link),
+.loadout-preset-card:has(.enchantment-link) {
+	cursor: pointer;
+}
+.loadout-empty,
+.loadout-warning {
+	background: rgba(240, 179, 90, 0.08);
+	border: 1px solid rgba(214, 173, 98, 0.25);
+	border-radius: 5px;
+	color: #efd6a3;
+	display: block;
+	font-size: 0.58em;
+	line-height: 1.25;
+	padding: 0.55rem 0.65rem;
+}
+.loadout-warning {
+	margin: 0.48rem 0.58rem 0;
+}
+@media (max-width: 760px) {
+	.loadout-card {
+		grid-template-columns: 2.08rem minmax(0, 1fr) !important;
+		padding-right: 0.58rem !important;
+	}
+	.loadout-icon {
+		height: 2rem !important;
+		min-height: 2rem;
+		min-width: 2rem;
+		width: 2rem !important;
+	}
+	.loadout-card-action {
+		grid-column: 2;
+		grid-row: auto;
+		margin-top: 0.3rem;
+		position: static;
+		width: max-content;
+	}
+}

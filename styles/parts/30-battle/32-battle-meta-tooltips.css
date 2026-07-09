@@ -1,0 +1,70 @@
+.battle-meta {
+	color: #b8b0a4;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0.78em;
+	gap: 0.45rem;
+	margin-top: 0.1rem;
+}
+.battle-pill {
+	background: rgba(214, 173, 98, 0.1);
+	border: 1px solid rgba(214, 173, 98, 0.22);
+	border-radius: 999px;
+	color: #d6ad62;
+	padding: 0.1rem 0.45rem;
+}
+.battle-status {
+	cursor: help;
+	position: relative;
+}
+.battle-tooltip {
+	background: linear-gradient(180deg, rgba(18, 18, 24, 0.98), rgba(8, 8, 12, 0.98));
+	border: 1px solid rgba(214, 173, 98, 0.36);
+	border-radius: 6px;
+	box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
+	color: #e7dfd4;
+	display: block;
+	font-size: 0.72rem;
+	font-weight: normal;
+	left: 50%;
+	line-height: 1.25;
+	max-width: min(18rem, 70vw);
+	opacity: 0;
+	padding: 0.42rem 0.55rem;
+	pointer-events: none;
+	position: absolute;
+	text-align: left;
+	top: -0.48rem;
+	transform: translate(-50%, -100%);
+	transition: opacity 120ms ease, transform 120ms ease;
+	white-space: normal;
+	width: max-content;
+	z-index: 20;
+}
+.battle-status::before {
+	border-left: 0.35rem solid transparent;
+	border-right: 0.35rem solid transparent;
+	border-top: 0.35rem solid rgba(214, 173, 98, 0.36);
+	content: "";
+	left: 50%;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	top: -0.16rem;
+	transform: translateX(-50%);
+	transition: opacity 120ms ease;
+	z-index: 21;
+}
+.battle-status:hover .battle-tooltip,
+.battle-status:hover::before {
+	opacity: 1;
+}
+.battle-status:hover .battle-tooltip {
+	transform: translate(-50%, calc(-100% - 0.1rem));
+}
+.battle-text {
+	border-left: 3px solid rgba(214, 173, 98, 0.38);
+	color: #e7dfd4;
+	margin: 0.15rem 0 0;
+	padding-left: 0.75rem;
+}

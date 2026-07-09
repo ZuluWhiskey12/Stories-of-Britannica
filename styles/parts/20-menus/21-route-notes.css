@@ -1,0 +1,36 @@
+.route-note-intro {
+	margin: 0 0 0.56rem;
+}
+.route-note-list {
+	display: grid;
+	gap: 0.26rem;
+	list-style-position: outside;
+	margin: 0.35rem 0 0;
+	padding-left: 1.15rem;
+}
+.route-note-list li {
+	line-height: 1.2;
+	padding-left: 0.12rem;
+}
+.route-note-list li::marker {
+	color: currentColor;
+}
+.route-note-common {
+	color: #f0b35a;
+}
+.route-note-romance {
+	color: #ff777f;
+}
+.route-note-nerve {
+	color: #ffc078;
+}
+.route-note-eldritch {
+	color: #6ff8ff;
+}
+.route-note-unclaimed {
+	color: #e8edf2;
+	text-shadow: 0 0 8px rgba(232, 237, 242, 0.22);
+}
+.route-note-text {
+	color: #e7dfd4;
+}

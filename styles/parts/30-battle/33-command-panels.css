@@ -1,0 +1,93 @@
+.command-panel {
+	background: rgba(255, 255, 255, 0.035);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 6px;
+	display: block;
+	margin-top: 0.75rem;
+	padding: 0.45rem;
+}
+.command-group {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	padding: 0.15rem 0;
+}
+.command-group:last-child {
+	border-bottom: 0;
+}
+.command-group summary {
+	color: #d6ad62;
+	cursor: pointer;
+	display: block;
+	font-size: 0.72em;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	list-style: none;
+	padding: 0.45rem 0.55rem;
+	position: relative;
+	text-transform: uppercase;
+}
+.command-group summary::-webkit-details-marker {
+	display: none;
+}
+.command-group summary::after {
+	color: #b8b0a4;
+	content: "+";
+	position: absolute;
+	right: 0.6rem;
+}
+.command-group[open] summary::after {
+	content: "-";
+}
+.command-body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.28rem;
+	padding: 0 0.4rem 0.45rem;
+}
+.command-body > tw-expression,
+.command-body > tw-hook {
+	display: contents;
+}
+.command-body br,
+.command-body tw-consecutive-br {
+	display: none;
+}
+.command-title {
+	color: #d6ad62;
+	display: block;
+	font-size: 0.68em;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	margin-bottom: 0.35rem;
+	text-transform: uppercase;
+}
+.command-group tw-link {
+	background: rgba(65, 105, 225, 0.14);
+	border: 1px solid rgba(122, 150, 255, 0.22);
+	border-radius: 5px;
+	color: #e3e9ff;
+	display: block;
+	font-size: 0.82em;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0.32rem 0.5rem;
+	transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+	width: 100%;
+}
+.command-group tw-link:hover {
+	background: rgba(65, 105, 225, 0.26);
+	border-color: rgba(122, 150, 255, 0.55);
+	color: #ffffff;
+	transform: translateY(-1px);
+}
+.locked-command {
+	background: rgba(255, 255, 255, 0.025);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 5px;
+	color: #8e867b;
+	display: block;
+	font-size: 0.78em;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0.32rem 0.5rem;
+	width: 100%;
+}

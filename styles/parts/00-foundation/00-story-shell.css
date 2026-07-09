@@ -1,0 +1,20 @@
+tw-story {
+	background: #101114;
+	color: #f4eee4;
+	font-family: Georgia, serif;
+}
+
+tw-passage {
+	line-height: 1.38;
+	max-width: 860px;
+	margin: 0 auto;
+}
+
+html {
+	background: #101114;
+	scrollbar-gutter: stable;
+}
+
+body {
+	background: #101114;
+}

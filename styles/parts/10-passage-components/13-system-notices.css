@@ -1,0 +1,53 @@
+/* System unlock notices. */
+.system-unlock-box {
+	background:
+		linear-gradient(180deg, rgba(21, 24, 34, 0.97), rgba(7, 8, 12, 0.98)),
+		radial-gradient(circle at 50% 0%, rgba(240, 179, 90, 0.16), transparent 42%),
+		linear-gradient(90deg, rgba(214, 173, 98, 0.12), transparent 18%, transparent 82%, rgba(111, 248, 255, 0.08));
+	border: 1px solid rgba(240, 179, 90, 0.48);
+	border-radius: 8px;
+	box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(255, 217, 144, 0.06);
+	box-sizing: border-box;
+	color: #f5ead8;
+	margin: 1.1rem auto 0.75rem;
+	max-width: 46rem;
+	padding: 1.1rem 1.15rem;
+}
+.system-unlock-kicker {
+	color: #9ffcff;
+	font-size: 0.58em;
+	font-weight: 800;
+	letter-spacing: 0;
+	margin-bottom: 0.18rem;
+	text-transform: uppercase;
+}
+.system-unlock-title {
+	border-bottom: 1px solid rgba(240, 179, 90, 0.26);
+	color: #ffd990;
+	font-size: 1.28em;
+	font-weight: 800;
+	line-height: 1.08;
+	margin: 0 0 0.72rem;
+	padding-bottom: 0.42rem;
+}
+.system-unlock-box p {
+	font-size: 0.86em;
+	line-height: 1.42;
+	margin: 0.55rem 0 0;
+}
+.system-unlock-list {
+	display: grid;
+	gap: 0.42rem;
+	margin: 0.75rem 0 0;
+}
+.system-unlock-item {
+	background: rgba(240, 179, 90, 0.07);
+	border: 1px solid rgba(240, 179, 90, 0.24);
+	border-radius: 6px;
+	font-size: 0.76em;
+	line-height: 1.28;
+	padding: 0.46rem 0.56rem;
+}
+.system-unlock-item strong {
+	color: #ffd990;
+}

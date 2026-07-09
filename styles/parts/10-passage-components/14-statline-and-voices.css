@@ -1,0 +1,52 @@
+.statline {
+	border-top: 1px solid #6b5942;
+	border-bottom: 1px solid #6b5942;
+	color: #d7c3a1;
+	display: block;
+	font-size: 0.75em;
+	letter-spacing: 0;
+	margin: 0 0 1.25em;
+	padding: 0.4em 0;
+}
+.forbidden-voice {
+	color: #cfa3ff;
+	font-weight: 700;
+	text-shadow: 0 0 8px rgba(150, 82, 255, 0.45), 0 0 18px rgba(92, 41, 156, 0.22);
+}
+.forbidden-voice-soft {
+	color: #d9b8ff;
+	font-style: italic;
+	text-shadow: 0 0 7px rgba(150, 82, 255, 0.34);
+}
+.ardenfelt-box,
+tw-passage[tags~="ardenfelt"] .narrative-box {
+	background: linear-gradient(180deg, rgba(24, 12, 34, 0.95), rgba(10, 6, 16, 0.96));
+	border-color: rgba(188, 125, 255, 0.36);
+	box-shadow: 0 14px 40px rgba(83, 38, 136, 0.16);
+}
+.ardenfelt-title {
+	color: #d8b4ff;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+.ardenfelt-voice {
+	color: #d9b8ff;
+	font-weight: 700;
+	text-shadow: 0 0 8px rgba(150, 82, 255, 0.42);
+}
+.battle-ui.ardenfelt-fight {
+	border-color: rgba(188, 125, 255, 0.34);
+	box-shadow: 0 18px 48px rgba(67, 33, 112, 0.2);
+}
+.voice {
+	color: #f27f7f;
+	font-style: italic;
+}
+.choice-note {
+	color: #b8b0a4;
+	display: block;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+}

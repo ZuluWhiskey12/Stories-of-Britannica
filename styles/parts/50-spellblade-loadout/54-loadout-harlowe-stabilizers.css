@@ -1,0 +1,51 @@
+/* End spellblade loadout mockup screen pass. */
+
+/* Stabilize loadout controls after Harlowe expands link macros. */
+.loadout-filter-row tw-expression,
+.loadout-filter-row tw-hook {
+	display: contents !important;
+	margin: 0 !important;
+	min-height: 0 !important;
+	padding: 0 !important;
+}
+.loadout-filter-row .loadout-filter:not(.active) {
+	background: transparent !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	display: contents !important;
+	padding: 0 !important;
+}
+.loadout-filter-row .loadout-filter.active,
+.loadout-filter-row tw-link,
+.loadout-filter-row .enchantment-link {
+	align-items: center !important;
+	background: rgba(240, 179, 90, 0.1) !important;
+	border: 1px solid rgba(214, 173, 98, 0.38) !important;
+	border-radius: 999px !important;
+	box-sizing: border-box !important;
+	color: #ddb975 !important;
+	display: inline-flex !important;
+	font-size: 0.54em !important;
+	font-weight: 800 !important;
+	justify-content: center !important;
+	line-height: 1 !important;
+	min-height: 1.36rem !important;
+	padding: 0.25rem 0.48rem !important;
+	text-decoration: none !important;
+	text-transform: uppercase !important;
+	white-space: nowrap !important;
+}
+.loadout-filter-row .loadout-filter.active {
+	background: rgba(240, 179, 90, 0.22) !important;
+	color: #ffe0a0 !important;
+}
+.loadout-filter-row tw-link:hover,
+.loadout-filter-row .enchantment-link:hover {
+	background: rgba(240, 179, 90, 0.18) !important;
+	border-color: rgba(255, 216, 136, 0.58) !important;
+	color: #ffe0a0 !important;
+}
+.loadout-card-list {
+	scroll-padding-top: 0.5rem;
+}
+
