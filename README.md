@@ -153,39 +153,6 @@ Recommended order:
 
 Avoid large visual rewrites in one commit.
 
-## Journal UI Notes
-
-The journal system includes selectors such as:
-
-```text
-.journal-menu
-.journal-toggle
-.journal-panel
-.journal-window
-.journal-book
-.journal-page-card
-.journal-page-content
-.journal-sketch
-.journal-page-nav
-.journal-page-turn
-```
-
-For journal redesign work:
-
-* Use CSS first for positioning, sizing, layout, and visual styling.
-* Edit Twine passages only if the journal structure itself needs to change.
-* Avoid JavaScript unless adding advanced behavior such as animated page turns.
-
-Recommended journal redesign phases:
-
-1. Center the journal panel.
-2. Make the outer panel feel like a book container.
-3. Restyle the inner window as an open book.
-4. Improve parchment page styling.
-5. Improve page controls.
-6. Later, consider passage markup changes for true text wrapping.
-7. Only after that, consider JavaScript for page-turn animation.
-
 ## Git Workflow
 
 Before starting a change:
