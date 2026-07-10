@@ -10,13 +10,22 @@
 	var lastStatValues = {};
 	var statGainAudios = {};
 	var skipNextStatGainCheck = false;
+	var lastHiddenGainNoticeNode = null;
 	var statGainSounds = {
 		Spark: "assets/audio/spark-se-flow-1.mp3",
+		Nerve: "assets/audio/nerve-se-flow-1.mp3",
+		Trust: "assets/audio/trust-se-flow-1.mp3",
+		Oath: "assets/audio/oath-se-flow-1.mp3",
 		Research: "assets/audio/research-se-flow-1.mp3",
+		Forbidden: "assets/audio/forbidden-se-flow-1.mp3",
 		Weapon: "assets/audio/weapon-se-flow-1.mp3",
 		Fusion: "assets/audio/fusion-se-flow-1.mp3",
-		Oath: "assets/audio/oath-se-flow-1.mp3",
-		Forbidden: "assets/audio/forbidden-se-flow-1.mp3"
+		Self: "assets/audio/self-se-flow-1.mp3",
+		Shame: "assets/audio/shame-se-flow-1.mp3"
+	};
+	var hiddenGainNoticeStats = {
+		Self: true,
+		Shame: true
 	};
 
 	function clean(text) {
@@ -25,11 +34,11 @@
 
 	function escapeHtml(text) {
 		return String(text || "")
-			.replace(/&/g, "&")
-			.replace(/</g, "<")
-			.replace(/>/g, ">")
-			.replace(/"/g, '"')
-			.replace(/'/g, "'");
+			.replace(/&/g, "&amp;")
+			.replace(/</g, "&lt;")
+			.replace(/>/g, "&gt;")
+			.replace(/"/g, "&quot;")
+			.replace(/'/g, "&#39;");
 	}
 
 	function loadEntries() {
@@ -145,22 +154,49 @@
 		return {};
 	}
 
+	function currentGainNoticeNode() {
+		var passage = visiblePassage();
+		return passage ? passage.querySelector(".gain-notice") : null;
+	}
+
+	function markCurrentHiddenGainNoticeSeen() {
+		var gainNode = currentGainNoticeNode();
+		if (gainNode) {
+			lastHiddenGainNoticeNode = gainNode;
+		}
+	}
+
+	function hiddenGainStatsFromCurrentNotice() {
+		var gainNode = currentGainNoticeNode();
+		if (!gainNode || gainNode === lastHiddenGainNoticeNode) {
+			return [];
+		}
+		lastHiddenGainNoticeNode = gainNode;
+		var gainText = clean(gainNode.textContent);
+		return Object.keys(hiddenGainNoticeStats).filter(function (statName) {
+			return new RegExp("\\+\\s*\\d+\\s*" + statName + "\\b", "i").test(gainText);
+		});
+	}
+
 	function checkStatGains() {
 		var stats = currentStatValues();
 		var statNames = Object.keys(statGainSounds);
-		if (!statNames.some(function (statName) { return typeof stats[statName] === "number" && !Number.isNaN(stats[statName]); })) {
+		var hasVisibleStats = statNames.some(function (statName) { return typeof stats[statName] === "number" && !Number.isNaN(stats[statName]); });
+		if (!hasVisibleStats) {
 			return;
 		}
 		if (skipNextStatGainCheck) {
 			lastStatValues = stats;
+			markCurrentHiddenGainNoticeSeen();
 			skipNextStatGainCheck = false;
 			return;
 		}
-		statNames.filter(function (statName) {
+		var visibleGainStats = statNames.filter(function (statName) {
 			return typeof stats[statName] === "number" &&
 				typeof lastStatValues[statName] === "number" &&
 				stats[statName] > lastStatValues[statName];
-		}).forEach(function (statName, index) {
+		});
+		visibleGainStats.concat(hiddenGainStatsFromCurrentNotice()).forEach(function (statName, index) {
 			playStatGainAudio(statName, index * 110);
 		});
 		lastStatValues = stats;
