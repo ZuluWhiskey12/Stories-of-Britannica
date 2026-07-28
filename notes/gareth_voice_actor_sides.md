@@ -1,4 +1,4 @@
-# Gareth Voice Actor Sides
+# Gareth Recording / Character Context Packet
 
 ## Character Direction
 
@@ -8,7 +8,9 @@ When he jokes, the actor should not make him careless. Gareth is usually watchin
 
 The softer moments matter. Gareth should sound surprised by his own honesty, especially with Pela. He wants connection badly, but he is afraid of needing it.
 
-For auditions, the actor should read the `GARETH` lines. The `NARRATOR`, `PELA`, `ODELYN`, `LORNE`, `ARDENFELT`, and other lines are included as cue/context lines so the scene does not feel like disconnected dialogue.
+For recording/reference, the actor should focus on the `GARETH` lines. The `NARRATOR`, `PELA`, `ODELYN`, `LORNE`, `ARDENFELT`, and other lines are included as cue/context lines so the scene does not feel like disconnected dialogue.
+
+This packet covers Gareth's current scenes through Chapter 9. Some branches are included even when Gareth does not speak because the branch changes the emotional texture of his next line.
 
 ## Scene 1: First Meeting After Spark
 
@@ -136,11 +138,15 @@ Tone: Dramatic, proud, theatrical. Then sharp and careless when he insults Odely
 
 VAYNE: First match. Odelyn versus Gareth.
 
-NARRATOR: Gareth smiles and waves at Pela as if being seen in a combat exam is normal. Odelyn summons a dark spear that crackles with heat. Gareth draws a jasmine-bright sword.
+NARRATOR: Gareth smiles and waves at Pela as if being seen in a combat exam is normal.
+
+NARRATOR: Odelyn summons a dark spear that crackles with heat. Gareth draws a jasmine-bright sword. The wards hum.
 
 NARRATOR: Gareth moves first: fast, clean strikes meant to test rather than wound.
 
 NARRATOR: Odelyn parries all of them. Her spearwork is a dance with no wasted motion. Wind slams Gareth backward, and the stage trembles under the impact.
+
+NARRATOR: Pela forgets, briefly, to be afraid.
 
 NARRATOR: Gareth rises wrapped in white flame.
 
@@ -150,23 +156,51 @@ NARRATOR: His second blade forms from fire. For several exchanges, he pushes Ode
 
 GARETH: With a borrowed power of your own, Cursed One.
 
+NARRATOR: The line lands wrong before Gareth understands the size of the wound he has touched.
+
 ## Scene 8: The Warning From Pela
 
 Context: Gareth has stepped on a wound he does not understand. Pela sees Odelyn's spirits gathering and warns him.
 
-Tone: Gareth has no line here, but this is key context for the next infirmary scenes.
+Tone: Gareth has no line here, but this is key context for the next infirmary scenes. It should be read as the consequence of his careless line, not as a random combat beat.
 
 NARRATOR: Odelyn's face goes cold. Black spirits gather around her spear. The air becomes heavy with old grief and violent obedience.
 
 NARRATOR: Pela understands, suddenly, that Gareth has stepped on a wound he does not know how to survive.
 
+Branch option: Pela studies the spell.
+
+NARRATOR: Pela watches the spirits instead of the spear. They are not simply darkness. They move like commands forced into dead mouths, each spirit dragged along a thread of Odelyn's will. The spell is powerful because it is cruel to everyone involved.
+
+Branch option: Pela reaches for Spark in panic.
+
+NARRATOR: Pela reaches for Spark before she knows what she plans to do. A white crackle leaps from her fingers and dies against the duel ward. The barrier shivers. For an instant, the black spirits turn their eyeless faces toward her. Pela feels the Saint's attention stir somewhere deep inside her oath.
+
+Branch option: Pela bends the ward.
+
+NARRATOR: Pela throws Spark into the ward instead of through it. The barrier flickers white. It does not break, but it bends the spirit spell's path by a handspan. Gareth sees the shift and raises his blades before terror fully takes him.
+
+NARRATOR: Professor Vayne still has to step in. But when she does, her eyes cut briefly to Pela.
+
+Branch option: Pela shouts.
+
 PELA: Gareth, move!
 
 NARRATOR: Pela's voice cracks across the stage. Gareth's eyes flick toward her, and that half-second is enough for fear to reach him before the spirits do. He raises his blades too late, but not blindly.
 
+NARRATOR: Professor Vayne appears between them. The spirits crash into her and burst apart in black smoke. When the smoke clears, Vayne is still standing.
+
 VAYNE: Enough.
 
 NARRATOR: Odelyn is sent to the Dean. Gareth is sent to the infirmary. Pela is asked to follow.
+
+NARRATOR: As Gareth is led away, he looks back at Pela. His grin is gone. Without it, he looks younger, embarrassed, and genuinely afraid. Pela realizes his confidence is not armor because it is strong. It is armor because it is loud.
+
+Romance branch context:
+
+NARRATOR: Pela smiles at Gareth before she can make the expression practical. Not pity. Not panic. Something warmer and more reckless, like telling him he is allowed to come back alive.
+
+NARRATOR: Gareth sees it. The fear on his face stumbles, briefly, into surprise. Then the infirmary door takes him away.
 
 ## Scene 9: Infirmary Visit
 
@@ -250,6 +284,18 @@ PELA: Who is it?
 
 GARETH: It's me, Gareth. Can I come in?
 
+Branch context: Pela hides the grimoire first.
+
+NARRATOR: Pela slides the grimoire beneath a folded blanket before she reaches the door. The motion is small, but it makes the room feel guilty. When she opens the door, Gareth glances past her shoulder. He does not ask what she hid. That almost makes it worse.
+
+Branch context: Pela checks on him before answering his concern.
+
+PELA: Are you all right?
+
+NARRATOR: Gareth blinks at the concern. For a second, the practiced ease falls away and he looks like someone who has been carrying a secret through crowded halls. Then he nods too quickly.
+
+GARETH: I am. I just wanted to check on you.
+
 NARRATOR: Pela opens the door without hiding anything because there is nothing ordinary about trying to look ordinary. Gareth stands outside with one hand lifted, as if he almost knocked again. He smiles when he sees her, but the smile has effort behind it.
 
 PELA: Of course, come on in.
@@ -265,6 +311,10 @@ PELA: Oh, yeah. I noticed that you weren't in class, what happened?
 GARETH: Nothing, I was just feeling a little sick. It's no big deal.
 
 PELA: Are you sure? I can't believe you'd miss that fight. It was incredible.
+
+Branch context: Pela lets the excuse pass.
+
+NARRATOR: Pela lets the excuse sit between them. Sick. No big deal. The words have the flat shine of a coin rubbed too often. She wants to push, but Gareth is looking at her like he came here to help her stay steady, not become another problem she has to solve.
 
 ## Scene 13: Pressing The Sickness
 
@@ -326,6 +376,12 @@ PELA: Great, no pressure.
 
 GARETH: It'll be fine. You can handle it. You've got the skills, but do not seek that fame or else the Nhal will no doubt kill you. If you're not careful, you'll find yourself in a position where you can't handle that exposure. You have to be smart about this, Pela.
 
+Branch context: Pela promises caution.
+
+PELA: I will be careful.
+
+NARRATOR: Gareth studies her as if he is trying to decide whether courage and recklessness are the same language in her mouth. He does not look convinced, but he looks grateful she tried.
+
 ## Scene 16: Ward Bypass
 
 Context: Pela asks how assassins could bypass Torrindale's defenses.
@@ -352,6 +408,18 @@ GARETH: It's mostly rumors, but people are speculating about us.
 
 PELA: Speculating? About what?
 
+Branch context: Pela denies the rumor too quickly.
+
+PELA: If this is about people thinking something is going on between us, that is stupid.
+
+NARRATOR: Gareth's eyebrows lift. Pela feels heat crawl up her neck because he has not said what the rumor is yet. Her denial arrives early and loud enough to betray her.
+
+Branch context: Pela admits the friendship matters.
+
+PELA: If they are saying we are close, they are not wrong.
+
+NARRATOR: Gareth goes still, then softens. The admission is not romance and not safety, but it is true. In Torrindale, truth can feel more dangerous than either.
+
 GARETH: They think we're dating, or, at least, that we're going to start dating.
 
 NARRATOR: Pela's mouth goes dry.
@@ -359,6 +427,16 @@ NARRATOR: Pela's mouth goes dry.
 PELA: That is what they think?
 
 GARETH: I know, but people are talking. They think that you and I have a connection, that we're close... I-mean-we-are-close-but-not-like-that.
+
+Branch context: Pela eases Gareth's embarrassment.
+
+PELA: I know what you mean.
+
+NARRATOR: Pela says it before Gareth can stammer himself into the floor. He exhales a laugh, weak but real. The room becomes less sharp for one breath. Then the danger underneath the rumor returns: people watch what they think they can use.
+
+Branch context: Pela says nothing.
+
+NARRATOR: Neither of them speaks. The silence fills itself with every version of the rumor the academy could invent. Pela hates how easily strangers can take a friendship and turn it into a weapon.
 
 ## Scene 18: Keeping Their Heads Down
 
@@ -405,6 +483,26 @@ GARETH: How are you doing? How's the book?
 PELA: The book?
 
 NARRATOR: Pela realizes she never told Gareth about it.
+
+Branch context: Pela pretends he means coursework.
+
+PELA: The book?
+
+PELA: If you mean coursework, it is fine. Heavy. Weird. Normal academy misery.
+
+NARRATOR: Gareth's expression says he heard the dodge. His kindness is that he lets it pass.
+
+Branch context: Pela keeps her voice steady.
+
+PELA: It is fine.
+
+NARRATOR: Pela says it, each word placed carefully.
+
+PELA: Coursework is just coursework.
+
+NARRATOR: Gareth watches her for a second longer than comfort allows. He does not believe her completely, but he chooses mercy over interrogation.
+
+Common route:
 
 PELA: It's fine. Nothing to report.
 
@@ -694,9 +792,9 @@ GARETH: Me neither.
 
 NARRATOR: It does not comfort her. It steadies her, which is rarer.
 
-## Optional Audition Notes
+## Recommended Performance Focus Scenes
 
-Recommended sustained audition scenes:
+Recommended sustained scenes:
 
 1. Scene 1 through Scene 4 tests charm, warning, and vulnerability.
 2. Scene 9 through Scene 11 tests wounded pride and regret.
