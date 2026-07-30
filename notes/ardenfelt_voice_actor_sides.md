@@ -200,7 +200,7 @@ ARDENFELT: That was just a warning. Do not test my patience, I can easily turn y
 
 PELA: You're insane.
 
-ARDENFELT: Perhaps, but I am the best teacher you'll ever have.
+ARDENFELT: Insanity has nothing to do with it.
 
 ## Scene 8: Panic Wearing Formal Clothing
 
@@ -228,7 +228,7 @@ ARDENFELT: Only students who listen with fear before knowledge.
 
 ARDENFELT: You are Brittanican mages. You should be able to recognize the sound of an explosion and determine the source. It's not my fault if the students are too lazy to do so.
 
-ARDENFELT: There's a big difference between how combat sounds and a demonstration blast of an explosion. It is a basic thing you should have learned in your first semester... of course, it appears you were not paying attention.
+ARDENFELT: There's a big difference between how combat sounds and a demonstration blast of an explosion. It is a basic thing you should have learned in your first semester... of course, it appears you were not paying attention... or you were not there.
 
 PELA: Well, why not evacuate the building?
 
@@ -360,7 +360,7 @@ NARRATOR: Professor Ardenfelt turned his attention to the members of the Nhal.
 
 NARRATOR: He raised his cane and pointed it directly at them.
 
-ARDENFELT: You two really thought you stood a chance at intercepting that cart and winning? Do you realize how insulting it is to think an Athean mage stands a chance against Brittanican mages?
+ARDENFELT: You two really thought you stood a chance at intercepting that cart and winning? Do you realize how insulting it is to think Athean mages stand a chance against Brittanican mages?
 
 NARRATOR: Ardenfelt gives them the courtesy of his contempt.
 
