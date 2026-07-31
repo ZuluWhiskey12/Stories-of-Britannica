@@ -464,7 +464,7 @@ NARRATOR: For one breath, Feastcraft feels pleased with her.
 
 ## Scene 20: Later Hunger
 
-Context: Later dream and Regio scenes remind the player that the Saint is still watching even when he is not speaking.
+Context: Later dream and Reglio scenes remind the player that the Saint is still watching even when he is not speaking.
 
 Tone: Reference only. The Saint as appetite, attention, and approval.
 
@@ -486,7 +486,7 @@ NARRATOR: With appetite.
 
 NARRATOR: Pela feels the oath shift under her skin like something sitting up to watch the procession.
 
-NARRATOR: Regio does not look at her, but the hunger inside her smiles anyway.
+NARRATOR: Reglio does not look at her, but the hunger inside her smiles anyway.
 
 ## Audition Sequence A: First Bargain
 
