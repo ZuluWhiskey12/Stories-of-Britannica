@@ -22,6 +22,238 @@ For recording/reference, the actor should focus on the `PELA` and `PELA THOUGHT`
 
 This packet covers Pela's current scenes through Chapter 9, including early Torrindale, Spark awakening, the Saint's oath, Gareth and Odelyn, Belladonna's lesson, the Bochord and Forbidden One, Lorne/Tama/Odelyn battles, the Mage-Card setup, Daisy, and Philip Gerkle.
 
+## Full In-Passage Spoken Line Checklist
+
+Use this section as the recording pull list. It is meant to cover what Pela actually says inside Twine passage prose. It does not include player-selectable option text unless that choice becomes spoken dialogue in the following passage. Thoughts/internal narration are left out of this checklist unless a later recording pass decides to treat them as voiceover.
+
+The scene sections below this checklist still matter for acting context and endurance. This list is for making sure the spoken Pela lines are easy to find and revise before sending to the actor.
+
+### Early Torrindale / Spark
+
+- "I belong here."
+- "I'm sorry."
+- "Professor."
+- "What happens if an affinity skips fire and presents as Spark?"
+- "You are not a mistake."
+- "Oh."
+- "I cannot do it."
+- "I do not know the spell."
+- "You're wrong!"
+- "I am someone who understands magic better than I can use it."
+- "I am tired of being treated like that means I am nothing."
+
+### The Saint / Oath / Self
+
+- "Power."
+- "I want to learn magic."
+- "I want..."
+- "I want to be loved."
+- "But not owned for it."
+- "If you want an honest answer, ask a better question."
+- "I am not a curse to be redeemed."
+
+### Gareth
+
+- "Why have you been watching me?"
+- "Why do you care?"
+- "What are you afraid of?"
+- "I noticed."
+- "Because I was looking."
+- "I have a few."
+- "I wanted to make sure you were okay."
+- "You held your own."
+- "Together."
+- "What happened to your family?"
+- "Can the Saint be resisted?"
+- "If they are saying we are close, they are not wrong."
+- "What do they say about you?"
+- "Are you all right?"
+- "You missed the fight because you were sick?"
+- "If this is about people thinking something is going on between us, that is stupid."
+- "We can be careful."
+- "I do not belong to their rumor."
+- "But I will not make myself smaller because someone else is bored enough to name me."
+- "And neither do you."
+- "I know you might not be the best person to ask, but what do you think I should do to prepare for Spellblade tomorrow?"
+- "There really isn't anything else you could let me know?"
+- "Thanks, Gareth."
+- "It is beautiful."
+- "I do not like how small he makes the road feel."
+- "What kind of person scares you?"
+
+### Odelyn
+
+- "Odelyn!"
+- "I am not ready."
+- "I hope you're right."
+- "Yes."
+- "It is."
+- "I won't."
+- "Hello, Odelyn."
+- "I was wondering if you could tell me more about Spellblade, and what I am in for?"
+- "Thank you."
+- "I will do my best."
+- "Anything else that can help me?"
+- "I will."
+- "What did your curse take from you?"
+- "I'm sorry. I didn't mean to-"
+- "You are right."
+- "No."
+- "I do not think I am okay."
+- "Sorry."
+- "You do not know what it is like."
+- "What does this place want from me?"
+- "Who did you lose?"
+- "I will try."
+- "You do not get to call me stupid because you are scared."
+- "You sound happy to see me."
+- "You are warm."
+- "You know, you are dangerous when you are gentle."
+- "It sounds better when you say it."
+- "You explain pain like a weapon."
+- "You sound like the warning label."
+- "You sound like you came because you cared."
+- "It can teach me."
+- "It cannot own me."
+
+### Belladonna / Negative Impact
+
+- "N-No."
+- "The force of the spell pulls you towards the caster. But, instead of being pushed away, you're sucked in. That's why you feel like you're floating, because you're not really being pushed. Hence the negative, because the force is pulling you instead of pushing you."
+- "A what?!"
+- "W-What's a Negative Burst?"
+- "Huh, I didn't know that."
+- "Shield."
+- "Professor."
+- "Would you really have expelled me?"
+
+### Bochord / Forbidden One
+
+- "I can't trust you."
+- "If I take you, you promise to teach me?"
+- "Who are you really?"
+- "Define proper mage."
+- "Just tell me how to use the damn book."
+- "That's not fair."
+- "You're a jerk."
+- "We were already in there."
+- "It contains the secret of demon-kind's magic."
+- "You may teach me."
+- "You may not name what I am."
+- "Then I will use it."
+- "But I am still the one using it."
+- "Forbidden One, I need to understand how to use spells and mana more efficiently. You..."
+- "You helped me understand how demons interact with magic better."
+- "I don't care about all that! Just teach me already..."
+- "What do you mean?"
+- "I don't quite understand."
+- "Wow."
+
+### Lorne Battle / Spellblade
+
+- "Overwhelmed."
+- "You call yourself a Dark Mage, but you move like someone who only learned one trick."
+- "Simple enough."
+- "You keep charging like if you hit hard enough, no one will notice you are scared."
+- "Hold still."
+- "I want to see what shape fear makes."
+- "I told you."
+- "I'm a Spark Mage."
+- "I did?"
+
+### Chapter 6 / Tama / Elijah
+
+- "You're insane."
+- "What are you talking about, they're coming from the east."
+- "What are you talking about, I'm just a normal student!"
+- "Besides, Professor Ardenfelt is the one who brought me here!"
+- "Oh, crap."
+- "I didn't do that."
+- "I didn't touch her."
+- "Death? Why are you talking about death?! What are you planning, huh?! Are you going to kill me, do you think you could actually pull it off?"
+- "Sorry for the delay."
+- "Yes, sir."
+- "What kind of warning was that?"
+- "Running from explosions is not emotional. It is rational."
+- "Who are you?"
+- "Ardenfelt brought me."
+- "Ask him. He was there."
+- "Stop calling me a spy."
+- "Do not hurt her."
+- "I know what you mean."
+- "If it sounds like an attack, students are going to treat it like one."
+- "There is no need for this."
+- "Understood."
+- "I will be careful."
+- "Why Ardenfelt?"
+- "Is Tama alive?"
+- "What debt makes someone obey Ashcroft?"
+- "Survival for who?"
+- "Why does exemption sound like punishment?"
+- "Is this a warning or a threat?"
+- "You are terrified I learned in one lesson what you bled for."
+- "You keep making the room kneel because you are afraid it will see you standing by yourself."
+
+### Odelyn Battle / Become Lightning
+
+- "It wasn't a fight."
+- "I will show you."
+- "I will not give in."
+- "I will not become a slave to my anger."
+- "You will not defeat me."
+- "I will not allow it."
+- "Why?"
+- "I understand."
+- "I'm sorry."
+- "I won't."
+- "I promise."
+- "Why am I so scared?"
+- "What do you mean?"
+
+### Chapter 8 / Chapter 9
+
+- "Not today."
+- "Professor Ardenfelt is difficult."
+- "But difficult is not the same thing as wrong."
+- "I will not fail."
+- "You are brave for someone who loses loudly."
+- "Thank you."
+
+### Daisy
+
+- "I like your guitar."
+- "Yes... please."
+- "Ah."
+- "That's cool."
+- "Pela."
+- "So, do you know how to play it?"
+- "I'd love that!"
+- "Have you ever been to Orgoshk?"
+- "I think I just want to listen."
+
+### Philip Gerkle
+
+- "Why not?"
+- "Who are you to say what I can and can't read?"
+- "Does that make you better than me or something?"
+- "Because if you are going to say I'm just a student, then that is not going to stop me."
+- "You called yourself a researcher, not a professor."
+- "By that logic I am also a researcher of arcane artificing, so hand me the book."
+- "Fine."
+- "Can you at least tell me why it's so important?"
+- "What is your research?"
+- "You can want something without being owned by wanting it."
+- "Move and I will annihilate you."
+- "What do you plan to do with the bodies of these poor people, and why did you kill them?"
+- "You have one more chance to answer me. I'm not in the mood for theatrics."
+- "What do you mean, my stench?! Do you mean because I'm half-demon?"
+- "I don't know who the Saint of the Feast is, and frankly I don't want to know."
+- "It's a curse!"
+- "I didn't choose this!"
+- "Okay."
+- "No."
+- "After what you did to these poor people, I will make sure you pay."
+
 ## Scene 1: Before Class
 
 Context: Pela is trying to cross the hallway before Professor Ardenfelt's class. This is ordinary academy cruelty, not a dramatic villain scene. It should feel familiar to her, which makes it worse.
